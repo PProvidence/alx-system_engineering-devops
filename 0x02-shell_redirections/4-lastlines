@@ -1,2 +1,2 @@
 #!/bin/bash
-ta/biil 4-lastlines
+tail 4-lastlines
