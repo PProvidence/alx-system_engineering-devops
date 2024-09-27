@@ -1,4 +1,4 @@
-#0x19-postmortem task using webstack debugging
+# 0x19-postmortem task using webstack debugging
 ![Technical Issue Resolution](./postmorterm_technical.webp)
 ##### Postmortem: Web Stack Outage on September 25, 2024
 
