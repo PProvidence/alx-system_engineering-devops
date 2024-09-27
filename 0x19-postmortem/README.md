@@ -1,11 +1,15 @@
-Postmortem: Web Stack Outage on September 25, 2024
+##### Postmortem: Web Stack Outage on September 25, 2024
 
-Issue Summary:
+### Issue Summary:
 
-Duration: September 25, 2024, 15:00 - 18:30 (UTC)
-Impact: The web application experienced downtime, rendering the service inaccessible for approximately 30% of users during the outage.
+## Duration: September 25, 2024, 15:00 - 18:30 (UTC)
+
+# Impact:
+
+The web application experienced downtime, rendering the service inaccessible for approximately 30% of users during the outage.
 Root Cause: A misconfiguration in the load balancer settings resulted in improper distribution of incoming traffic, causing service disruptions.
-Timeline:
+
+# Timeline:
 
 15:00 (UTC): Issue detected through increased error rates and user reports of site unavailability.
 15:10 (UTC): Monitoring alerts triggered for elevated error rates and server response time.
@@ -15,11 +19,18 @@ Timeline:
 16:30 (UTC): Network engineers identified misconfiguration in load balancer settings causing uneven distribution of traffic.
 17:00 (UTC): Load balancer settings corrected, and service started to recover.
 18:30 (UTC): Full service restoration confirmed.
-Root Cause and Resolution:
 
-Root Cause: The misconfiguration in the load balancer resulted in uneven distribution of incoming traffic, causing some servers to be overloaded while others remained underutilized.
-Resolution: The load balancer settings were corrected to evenly distribute incoming requests among the available servers. This ensured a balanced workload and prevented service degradation.
-Corrective and Preventative Measures:
+## Root Cause and Resolution:
+
+# Root Cause:
+
+The misconfiguration in the load balancer resulted in uneven distribution of incoming traffic, causing some servers to be overloaded while others remained underutilized.
+
+# Resolution:
+
+The load balancer settings were corrected to evenly distribute incoming requests among the available servers. This ensured a balanced workload and prevented service degradation.
+
+## Corrective and Preventative Measures:
 
 Improvements/Fixes:
 
